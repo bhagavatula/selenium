@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 30 23:36:20 IST 2016</td>
+<td>Started on:</td><td>Sun Sep 18 17:22:17 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>29 seconds (29655 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46820 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,17 +75,93 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.companyname.projectname.testscripts.TC002_testRegistraion.testRegistraion()'><b>testRegistraion</b><br>Test class: com.companyname.projectname.testscripts.TC002_testRegistraion<br>Test method: Test Registration with valid data<br/>
-<a href="#Output-1585995280" onClick='toggleBox("Output-1585995280", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1585995280" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1585995280">
-Craeting sing in Object<br/>
-</div>
-</td>
+<td title='com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin()'><b>testlogin</b><br>Test class: com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider<br>Parameters: TC001, test902@gmail.com, password, Y</td>
 <td></td>
-<td>17</td>
-<td>com.companyname.projectname.testscripts.TC002_testRegistraion@8567b79</td></tr>
+<td>10</td>
+<td>com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef</td></tr>
+<tr>
+<td title='com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin()'><b>testlogin</b><br>Test class: com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider<br>Parameters: TC002, test902@gmail.com, password, Y</td>
+<td></td>
+<td>9</td>
+<td>com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef</td></tr>
+<tr>
+<td title='com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin()'><b>testlogin</b><br>Test class: com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider<br>Parameters: TC004, test902@gmail.com, password, Y</td>
+<td></td>
+<td>8</td>
+<td>com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef</td></tr>
+<tr>
+<td title='com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin()'><b>testlogin</b><br>Test class: com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider<br>Parameters: TC005, test902@gmail.com, password, Y</td>
+<td></td>
+<td>8</td>
+<td>com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin()'><b>testlogin</b><br>Test class: com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider<br>Parameters: TC003, test902@gmail.com, password, N</td>
+<td><div><pre>org.testng.SkipException: Skipping the test
+	at com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin(TC001_testLoginThroughDataProvider.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1993842872", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1993842872'><pre>org.testng.SkipException: Skipping the test
+	at com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin(TC001_testLoginThroughDataProvider.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+</pre></div></td>
+<td>0</td>
+<td>com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef</td></tr>
 </table><p>
 </body>
 </html>

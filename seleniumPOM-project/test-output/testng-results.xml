@@ -1,43 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="1" failed="0" total="5" passed="4">
   <reporter-output>
-    <line>
-      <![CDATA[Test started running:testlogin at:16]]>
-    </line>
-    <line>
-      <![CDATA[Test started running:testRegistraionWithValidData at:16]]>
-    </line>
-    <line>
-      <![CDATA[<a href="/Users/bsingh5/Documents/video/selenium-project 2.17.19 PM//src//test//java//com//companyname//projectname//screenshots//09-02-2016_14-58-testRegistraionWithValidData.png"><img src="file:////Users/bsingh5/Documents/video/selenium-project 2.17.19 PM//src//test//java//com//companyname//projectname//screenshots//09-02-2016_14-58-testRegistraionWithValidData.png" alt=""height='100' width='100'/> <br />]]>
-    </line>
-    <line>
-      <![CDATA[testRegistraionWithValidData--Test method failed
-]]>
-    </line>
-    <line>
-      <![CDATA[Test started running:testRegistraionWithInvalidData at:16]]>
-    </line>
   </reporter-output>
-  <suite name="Regression Suit" duration-ms="113423" started-at="2016-09-02T09:03:15Z" finished-at="2016-09-02T09:05:09Z">
+  <suite name="Default suite" duration-ms="46820" started-at="2016-09-18T11:52:17Z" finished-at="2016-09-18T11:53:04Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="113423" started-at="2016-09-02T09:03:15Z" finished-at="2016-09-02T09:05:09Z">
-      <class name="com.companyname.projectname.testscripts.TC002_testRegistraion">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.companyname.projectname.testscripts.TC002_testRegistraion@1d3d58a1]" name="setUP" is-config="true" duration-ms="32543" started-at="2016-09-02T14:34:04Z" finished-at="2016-09-02T14:34:36Z">
+    <test name="Default test" duration-ms="46820" started-at="2016-09-18T11:52:17Z" finished-at="2016-09-18T11:53:04Z">
+      <class name="com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider">
+        <test-method status="PASS" signature="setUP()[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef]" name="setUP" is-config="true" duration-ms="8618" started-at="2016-09-18T17:22:17Z" finished-at="2016-09-18T17:22:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method status="FAIL" signature="testRegistraionWithValidData()[pri:0, instance:com.companyname.projectname.testscripts.TC002_testRegistraion@1d3d58a1]" name="testRegistraionWithValidData" duration-ms="21238" started-at="2016-09-02T14:34:36Z" description="Test Registration with valid data" finished-at="2016-09-02T14:34:58Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="PASS" signature="testlogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef]" name="testlogin" duration-ms="10423" started-at="2016-09-18T17:22:26Z" data-provider="loginData" finished-at="2016-09-18T17:22:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC001]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test902@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method status="PASS" signature="testlogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef]" name="testlogin" duration-ms="9263" started-at="2016-09-18T17:22:37Z" data-provider="loginData" finished-at="2016-09-18T17:22:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC002]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test902@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method status="SKIP" signature="testlogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef]" name="testlogin" duration-ms="3" started-at="2016-09-18T17:22:46Z" data-provider="loginData" finished-at="2016-09-18T17:22:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC003]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test902@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Registration test is fail expected [true] but found [false]]]>
+              <![CDATA[Skipping the test]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Registration test is fail expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.companyname.projectname.testscripts.TC002_testRegistraion.testRegistraionWithValidData(TC002_testRegistraion.java:49)
+              <![CDATA[org.testng.SkipException: Skipping the test
+	at com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider.testlogin(TC001_testLoginThroughDataProvider.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,45 +120,67 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
-            <line>
-              <![CDATA[Test started running:testRegistraionWithValidData at:16]]>
-            </line>
-            <line>
-              <![CDATA[<a href="/Users/bsingh5/Documents/video/selenium-project 2.17.19 PM//src//test//java//com//companyname//projectname//screenshots//09-02-2016_14-58-testRegistraionWithValidData.png"><img src="file:////Users/bsingh5/Documents/video/selenium-project 2.17.19 PM//src//test//java//com//companyname//projectname//screenshots//09-02-2016_14-58-testRegistraionWithValidData.png" alt=""height='100' width='100'/> <br />]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testRegistraionWithValidData -->
-        <test-method status="PASS" signature="testRegistraionWithInvalidData()[pri:1, instance:com.companyname.projectname.testscripts.TC002_testRegistraion@1d3d58a1]" name="testRegistraionWithInvalidData" duration-ms="10948" started-at="2016-09-02T14:34:58Z" description="Test Registration with invalid data" finished-at="2016-09-02T14:35:09Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started running:testRegistraionWithInvalidData at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testRegistraionWithInvalidData -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.companyname.projectname.testscripts.TC002_testRegistraion@1d3d58a1]" name="quitBrowser" is-config="true" duration-ms="83" started-at="2016-09-02T14:35:09Z" finished-at="2016-09-02T14:35:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitBrowser -->
-      </class> <!-- com.companyname.projectname.testscripts.TC002_testRegistraion -->
-      <class name="com.companyname.projectname.testscripts.TC001_testLogin">
-        <test-method status="PASS" signature="setUP()[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLogin@4a2a4591]" name="setUP" is-config="true" duration-ms="39715" started-at="2016-09-02T14:33:15Z" finished-at="2016-09-02T14:33:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUP -->
-        <test-method status="PASS" signature="testlogin()[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLogin@4a2a4591]" name="testlogin" duration-ms="8536" started-at="2016-09-02T14:33:55Z" finished-at="2016-09-02T14:34:04Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test started running:testlogin at:16]]>
-            </line>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLogin@4a2a4591]" name="quitBrowser" is-config="true" duration-ms="92" started-at="2016-09-02T14:34:04Z" finished-at="2016-09-02T14:34:04Z">
+        <test-method status="PASS" signature="testlogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef]" name="testlogin" duration-ms="8978" started-at="2016-09-18T17:22:46Z" data-provider="loginData" finished-at="2016-09-18T17:22:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC004]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test902@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method status="PASS" signature="testlogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef]" name="testlogin" duration-ms="8421" started-at="2016-09-18T17:22:55Z" data-provider="loginData" finished-at="2016-09-18T17:23:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC005]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test902@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogin -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider@2e55d1ef]" name="quitBrowser" is-config="true" duration-ms="89" started-at="2016-09-18T17:23:04Z" finished-at="2016-09-18T17:23:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.companyname.projectname.testscripts.TC001_testLogin -->
-    </test> <!-- Test -->
-  </suite> <!-- Regression Suit -->
+      </class> <!-- com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -74,6 +74,13 @@ public class SignIn {
 		clickonSignInToAccount();
 	}
 	
+	public void loginToApplication(String Email, String Password){
+		clickonSignIn();
+		enterAllreadyRegisterUserEmail(Email);
+		enterAllReadyRegisteredPassword(Password);
+		clickonSignInToAccount();
+	}
+	
 	public void enterDataToCreateAnAccount(String emailAddress){
 		clickonSignIn();
 		enterEmailAddressToCraeteAccount(emailAddress);
