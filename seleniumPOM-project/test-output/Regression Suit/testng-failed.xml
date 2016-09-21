@@ -12,6 +12,12 @@
           <include name="setUP"/>
         </methods>
       </class> <!-- com.companyname.projectname.testscripts.TC001_testLogin -->
+      <class name="com.companyname.projectname.testscripts.TC001_testLogin2">
+        <methods>
+          <include name="quitBrowser"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- com.companyname.projectname.testscripts.TC001_testLogin2 -->
       <class name="com.companyname.projectname.testscripts.TC002_testRegistraion">
         <methods>
           <include name="testRegistraionWithValidData"/>

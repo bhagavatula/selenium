@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider">
+      <class name="com.companyname.projectname.testscripts.TC001_testLogin">
         <methods>
+          <include name="testlogin"/>
           <include name="quitBrowser"/>
-          <include name="testlogin" invocation-numbers="2"/>
           <include name="setUP"/>
         </methods>
-      </class> <!-- com.companyname.projectname.testscripts.TC001_testLoginThroughDataProvider -->
+      </class> <!-- com.companyname.projectname.testscripts.TC001_testLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
