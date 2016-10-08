@@ -1,236 +1,265 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-  <meta charset='utf-8'>
-  <title>TestNG reports</title>
+<head>
+<meta charset='utf-8'>
+<title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
-    <script type="text/javascript" src="testng-reports.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type='text/javascript'>
+<link type="text/css" href="testng-reports.css" rel="stylesheet" />
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="testng-reports.js"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type='text/javascript'>
       google.load('visualization', '1', {packages:['table']});
       google.setOnLoadCallback(drawTable);
       var suiteTableInitFunctions = new Array();
       var suiteTableData = new Array();
     </script>
-    <!--
+<!--
       <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
      -->
-  </head>
+</head>
 
-  <body>
-    <div class="top-banner-root">
-      <span class="top-banner-title-font">Test results</span>
-      <br/>
-      <span class="top-banner-font-1">1 suite</span>
-    </div> <!-- top-banner-root -->
-    <div class="navigator-root">
-      <div class="navigator-suite-header">
-        <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
-          </img> <!-- collapse-all-icon -->
-        </a> <!-- collapse-all-link -->
-      </div> <!-- navigator-suite-header -->
-      <div class="suite">
-        <div class="rounded-window">
-          <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Regression_Suit">
-              <span class="suite-name border-passed">Regression Suit</span>
-            </a> <!-- navigator-link -->
-          </div> <!-- suite-header light-rounded-window-top -->
-          <div class="navigator-suite-content">
-            <div class="suite-section-title">
-              <span>Info</span>
-            </div> <!-- suite-section-title -->
-            <div class="suite-section-content">
-              <ul>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Regression_Suit">
-                    <span>testng.xml</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Regression_Suit">
-                    <span class="test-stats">2 tests</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="group-Regression_Suit">
-                    <span>0 groups</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="times-Regression_Suit">
-                    <span>Times</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Regression_Suit">
-                    <span>Reporter output</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Regression_Suit">
-                    <span>Ignored methods</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Regression_Suit">
-                    <span>Chronological view</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-              </ul>
-            </div> <!-- suite-section-content -->
-            <div class="result-section">
-              <div class="suite-section-title">
-                <span>Results</span>
-              </div> <!-- suite-section-title -->
-              <div class="suite-section-content">
-                <ul>
-                  <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Regression_Suit" class="hide-methods passed suite-Regression_Suit"> (hide)</a> <!-- hide-methods passed suite-Regression_Suit -->
-                      <a href="#" panel-name="suite-Regression_Suit" class="show-methods passed suite-Regression_Suit"> (show)</a> <!-- show-methods passed suite-Regression_Suit -->
-                    </span>
-                    <div class="method-list-content passed suite-Regression_Suit">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test2" hash-for-method="testLoginWithInvalidData">testLoginWithInvalidData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test2" hash-for-method="testLoginWithValidData">testLoginWithValidData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test1" hash-for-method="testReport1">testReport1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test1" hash-for-method="testReport2">testReport2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test1" hash-for-method="testReport3">testReport3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test1" hash-for-method="testReport4">testReport4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test2" hash-for-method="testReport4">testReport4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Suit" title="com.companyname.projectname.testscripts.Test2" hash-for-method="verifyLogoutISDisplayed">verifyLogoutISDisplayed</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Regression_Suit -->
-                  </li>
-                </ul>
-              </div> <!-- suite-section-content -->
-            </div> <!-- result-section -->
-          </div> <!-- navigator-suite-content -->
-        </div> <!-- rounded-window -->
-      </div> <!-- suite -->
-    </div> <!-- navigator-root -->
-    <div class="wrapper">
-      <div class="main-panel-root">
-        <div panel-name="suite-Regression_Suit" class="panel Regression_Suit">
-          <div class="suite-Regression_Suit-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.companyname.projectname.testscripts.Test1</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testReport1">
-                  </a> <!-- testReport1 -->
-                  <span class="method-name">testReport1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testReport2">
-                  </a> <!-- testReport2 -->
-                  <span class="method-name">testReport2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testReport3">
-                  </a> <!-- testReport3 -->
-                  <span class="method-name">testReport3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testReport4">
-                  </a> <!-- testReport4 -->
-                  <span class="method-name">testReport4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suit-class-passed -->
-          <div class="suite-Regression_Suit-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.companyname.projectname.testscripts.Test2</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithInvalidData">
-                  </a> <!-- testLoginWithInvalidData -->
-                  <span class="method-name">testLoginWithInvalidData</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginWithValidData">
-                  </a> <!-- testLoginWithValidData -->
-                  <span class="method-name">testLoginWithValidData</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testReport4">
-                  </a> <!-- testReport4 -->
-                  <span class="method-name">testReport4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogoutISDisplayed">
-                  </a> <!-- verifyLogoutISDisplayed -->
-                  <span class="method-name">verifyLogoutISDisplayed</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Regression_Suit-class-passed -->
-        </div> <!-- panel Regression_Suit -->
-        <div panel-name="test-xml-Regression_Suit" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/bsingh5/pageobjectmodel-seleniumFramework/seleniumPOM-project/testng.xml</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <pre>
+<body>
+	<div class="top-banner-root">
+		<span class="top-banner-title-font">Test results</span> <br /> <span
+			class="top-banner-font-1">1 suite</span>
+	</div>
+	<!-- top-banner-root -->
+	<div class="navigator-root">
+		<div class="navigator-suite-header">
+			<span>All suites</span> <a href="#" class="collapse-all-link"
+				title="Collapse/expand all the suites"> <img
+				class="collapse-all-icon" src="collapseall.gif"> </img> <!-- collapse-all-icon -->
+			</a>
+			<!-- collapse-all-link -->
+		</div>
+		<!-- navigator-suite-header -->
+		<div class="suite">
+			<div class="rounded-window">
+				<div class="suite-header light-rounded-window-top">
+					<a href="#" class="navigator-link"
+						panel-name="suite-Regression_Suit"> <span
+						class="suite-name border-passed">Regression Suit</span>
+					</a>
+					<!-- navigator-link -->
+				</div>
+				<!-- suite-header light-rounded-window-top -->
+				<div class="navigator-suite-content">
+					<div class="suite-section-title">
+						<span>Info</span>
+					</div>
+					<!-- suite-section-title -->
+					<div class="suite-section-content">
+						<ul>
+							<li><a href="#" class="navigator-link "
+								panel-name="test-xml-Regression_Suit"> <span>testng.xml</span>
+							</a> <!-- navigator-link  --></li>
+							<li><a href="#" class="navigator-link "
+								panel-name="testlist-Regression_Suit"> <span
+									class="test-stats">2 tests</span>
+							</a> <!-- navigator-link  --></li>
+							<li><a href="#" class="navigator-link "
+								panel-name="group-Regression_Suit"> <span>0 groups</span>
+							</a> <!-- navigator-link  --></li>
+							<li><a href="#" class="navigator-link "
+								panel-name="times-Regression_Suit"> <span>Times</span>
+							</a> <!-- navigator-link  --></li>
+							<li><a href="#" class="navigator-link "
+								panel-name="reporter-Regression_Suit"> <span>Reporter
+										output</span>
+							</a> <!-- navigator-link  --></li>
+							<li><a href="#" class="navigator-link "
+								panel-name="ignored-methods-Regression_Suit"> <span>Ignored
+										methods</span>
+							</a> <!-- navigator-link  --></li>
+							<li><a href="#" class="navigator-link "
+								panel-name="chronological-Regression_Suit"> <span>Chronological
+										view</span>
+							</a> <!-- navigator-link  --></li>
+						</ul>
+					</div>
+					<!-- suite-section-content -->
+					<div class="result-section">
+						<div class="suite-section-title">
+							<span>Results</span>
+						</div>
+						<!-- suite-section-title -->
+						<div class="suite-section-content">
+							<ul>
+								<li><span class="method-stats">8 methods, 8 passed</span></li>
+								<li><span class="method-list-title passed">Passed
+										methods</span> <span class="show-or-hide-methods passed"> <a
+										href="#" panel-name="suite-Regression_Suit"
+										class="hide-methods passed suite-Regression_Suit"> (hide)</a>
+										<!-- hide-methods passed suite-Regression_Suit --> <a href="#"
+										panel-name="suite-Regression_Suit"
+										class="show-methods passed suite-Regression_Suit"> (show)</a>
+										<!-- show-methods passed suite-Regression_Suit -->
+								</span>
+									<div class="method-list-content passed suite-Regression_Suit">
+										<span> <img width="3%" src="passed.png" /> <a href="#"
+											class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test2"
+											hash-for-method="testLoginWithInvalidData">testLoginWithInvalidData</a>
+											<!-- method navigator-link -->
+										</span> <br /> <span> <img width="3%" src="passed.png" /> <a
+											href="#" class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test2"
+											hash-for-method="testLoginWithValidData">testLoginWithValidData</a>
+											<!-- method navigator-link -->
+										</span> <br /> <span> <img width="3%" src="passed.png" /> <a
+											href="#" class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test1"
+											hash-for-method="testReport1">testReport1</a> <!-- method navigator-link -->
+										</span> <br /> <span> <img width="3%" src="passed.png" /> <a
+											href="#" class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test1"
+											hash-for-method="testReport2">testReport2</a> <!-- method navigator-link -->
+										</span> <br /> <span> <img width="3%" src="passed.png" /> <a
+											href="#" class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test1"
+											hash-for-method="testReport3">testReport3</a> <!-- method navigator-link -->
+										</span> <br /> <span> <img width="3%" src="passed.png" /> <a
+											href="#" class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test1"
+											hash-for-method="testReport4">testReport4</a> <!-- method navigator-link -->
+										</span> <br /> <span> <img width="3%" src="passed.png" /> <a
+											href="#" class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test2"
+											hash-for-method="testReport4">testReport4</a> <!-- method navigator-link -->
+										</span> <br /> <span> <img width="3%" src="passed.png" /> <a
+											href="#" class="method navigator-link"
+											panel-name="suite-Regression_Suit"
+											title="com.companyname.projectname.testscripts.Test2"
+											hash-for-method="verifyLogoutISDisplayed">verifyLogoutISDisplayed</a>
+											<!-- method navigator-link -->
+										</span> <br />
+									</div> <!-- method-list-content passed suite-Regression_Suit --></li>
+							</ul>
+						</div>
+						<!-- suite-section-content -->
+					</div>
+					<!-- result-section -->
+				</div>
+				<!-- navigator-suite-content -->
+			</div>
+			<!-- rounded-window -->
+		</div>
+		<!-- suite -->
+	</div>
+	<!-- navigator-root -->
+	<div class="wrapper">
+		<div class="main-panel-root">
+			<div panel-name="suite-Regression_Suit" class="panel Regression_Suit">
+				<div class="suite-Regression_Suit-class-passed">
+					<div class="main-panel-header rounded-window-top">
+						<img src="passed.png" /> <span class="class-name">com.companyname.projectname.testscripts.Test1</span>
+					</div>
+					<!-- main-panel-header rounded-window-top -->
+					<div class="main-panel-content rounded-window-bottom">
+						<div class="method">
+							<div class="method-content">
+								<a name="testReport1"> </a>
+								<!-- testReport1 -->
+								<span class="method-name">testReport1</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="testReport2"> </a>
+								<!-- testReport2 -->
+								<span class="method-name">testReport2</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="testReport3"> </a>
+								<!-- testReport3 -->
+								<span class="method-name">testReport3</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="testReport4"> </a>
+								<!-- testReport4 -->
+								<span class="method-name">testReport4</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+					</div>
+					<!-- main-panel-content rounded-window-bottom -->
+				</div>
+				<!-- suite-Regression_Suit-class-passed -->
+				<div class="suite-Regression_Suit-class-passed">
+					<div class="main-panel-header rounded-window-top">
+						<img src="passed.png" /> <span class="class-name">com.companyname.projectname.testscripts.Test2</span>
+					</div>
+					<!-- main-panel-header rounded-window-top -->
+					<div class="main-panel-content rounded-window-bottom">
+						<div class="method">
+							<div class="method-content">
+								<a name="testLoginWithInvalidData"> </a>
+								<!-- testLoginWithInvalidData -->
+								<span class="method-name">testLoginWithInvalidData</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="testLoginWithValidData"> </a>
+								<!-- testLoginWithValidData -->
+								<span class="method-name">testLoginWithValidData</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="testReport4"> </a>
+								<!-- testReport4 -->
+								<span class="method-name">testReport4</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="verifyLogoutISDisplayed"> </a>
+								<!-- verifyLogoutISDisplayed -->
+								<span class="method-name">verifyLogoutISDisplayed</span>
+							</div>
+							<!-- method-content -->
+						</div>
+						<!-- method -->
+					</div>
+					<!-- main-panel-content rounded-window-bottom -->
+				</div>
+				<!-- suite-Regression_Suit-class-passed -->
+			</div>
+			<!-- panel Regression_Suit -->
+			<div panel-name="test-xml-Regression_Suit" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">/Users/bsingh5/pageobjectmodel-seleniumFramework/seleniumPOM-project/testng.xml</span>
+				</div>
+				<!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Regression Suit&quot;&gt;
@@ -249,37 +278,41 @@
   &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Regression Suit --&gt;
             </pre>
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="testlist-Regression_Suit" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Regression Suit</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <ul>
-              <li>
-                <span class="test-name">Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Test1 (1 class)</span>
-              </li>
-            </ul>
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="group-Regression_Suit" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Regression Suit</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="times-Regression_Suit" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Regression Suit</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="times-div">
-              <script type="text/javascript">
+				</div>
+				<!-- main-panel-content rounded-window-bottom -->
+			</div>
+			<!-- panel -->
+			<div panel-name="testlist-Regression_Suit" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Tests for Regression Suit</span>
+				</div>
+				<!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<ul>
+						<li><span class="test-name">Test (1 class)</span></li>
+						<li><span class="test-name">Test1 (1 class)</span></li>
+					</ul>
+				</div>
+				<!-- main-panel-content rounded-window-bottom -->
+			</div>
+			<!-- panel -->
+			<div panel-name="group-Regression_Suit" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Groups for Regression Suit</span>
+				</div>
+				<!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom"></div>
+				<!-- main-panel-content rounded-window-bottom -->
+			</div>
+			<!-- panel -->
+			<div panel-name="times-Regression_Suit" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Times for Regression Suit</span>
+				</div>
+				<!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<div class="times-div">
+						<script type="text/javascript">
 suiteTableInitFunctions.push('tableData_Regression_Suit');
 function tableData_Regression_Suit() {
 var data = new google.visualization.DataTable();
@@ -324,119 +357,168 @@ window.suiteTableData['Regression_Suit']= { tableData: data, tableDiv: 'times-di
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 ms</span>
-              <div id="times-div-Regression_Suit">
-              </div> <!-- times-div-Regression_Suit -->
-            </div> <!-- times-div -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="reporter-Regression_Suit" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Regression Suit</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testReport2</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:testReport2 at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testReport4</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:testReport4 at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testReport1</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:testReport1 at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testReport3</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:testReport3 at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testLoginWithInvalidData</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:testLoginWithInvalidData at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testReport4</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:testReport4 at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyLogoutISDisplayed</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:verifyLogoutISDisplayed at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">testLoginWithValidData</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Test started running:testLoginWithValidData at:16</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="ignored-methods-Regression_Suit" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="chronological-Regression_Suit" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Methods in chronological order</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.companyname.projectname.testscripts.Test1</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testReport1</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testReport2</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testReport3</span>
-                <span class="method-start">32 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testReport4</span>
-                <span class="method-start">38 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.companyname.projectname.testscripts.Test2</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testLoginWithInvalidData</span>
-                <span class="method-start">59 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testLoginWithValidData</span>
-                <span class="method-start">63 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testReport4</span>
-                <span class="method-start">69 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyLogoutISDisplayed</span>
-                <span class="method-start">74 ms</span>
-              </div> <!-- test-method -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-      </div> <!-- main-panel-root -->
-    </div> <!-- wrapper -->
-  </body>
+						<span class="suite-total-time">Total running time: 40 ms</span>
+						<div id="times-div-Regression_Suit"></div>
+						<!-- times-div-Regression_Suit -->
+					</div>
+					<!-- times-div -->
+				</div>
+				<!-- main-panel-content rounded-window-bottom -->
+			</div>
+			<!-- panel -->
+			<div panel-name="reporter-Regression_Suit" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Reporter output for Regression
+						Suit</span>
+				</div>
+				<!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">testReport2</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:testReport2 at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">testReport4</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:testReport4 at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">testReport1</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:testReport1 at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">testReport3</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:testReport3 at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">testLoginWithInvalidData</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:testLoginWithInvalidData at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">testReport4</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:testReport4 at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">verifyLogoutISDisplayed</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:verifyLogoutISDisplayed at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">testLoginWithValidData</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">Test started
+								running:testLoginWithValidData at:16</span>
+						</div>
+						<!-- reporter-method-output-div -->
+					</div>
+					<!-- reporter-method-div -->
+				</div>
+				<!-- main-panel-content rounded-window-bottom -->
+			</div>
+			<!-- panel -->
+			<div panel-name="ignored-methods-Regression_Suit" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">0 ignored methods</span>
+				</div>
+				<!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom"></div>
+				<!-- main-panel-content rounded-window-bottom -->
+			</div>
+			<!-- panel -->
+			<div panel-name="chronological-Regression_Suit" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Methods in chronological order</span>
+				</div>
+				<!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<div class="chronological-class">
+						<div class="chronological-class-name">com.companyname.projectname.testscripts.Test1</div>
+						<!-- chronological-class-name -->
+						<div class="test-method">
+							<span class="method-name">testReport1</span> <span
+								class="method-start">0 ms</span>
+						</div>
+						<!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">testReport2</span> <span
+								class="method-start">24 ms</span>
+						</div>
+						<!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">testReport3</span> <span
+								class="method-start">32 ms</span>
+						</div>
+						<!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">testReport4</span> <span
+								class="method-start">38 ms</span>
+						</div>
+						<!-- test-method -->
+					</div>
+					<!-- chronological-class -->
+					<div class="chronological-class">
+						<div class="chronological-class-name">com.companyname.projectname.testscripts.Test2</div>
+						<!-- chronological-class-name -->
+						<div class="test-method">
+							<span class="method-name">testLoginWithInvalidData</span> <span
+								class="method-start">59 ms</span>
+						</div>
+						<!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">testLoginWithValidData</span> <span
+								class="method-start">63 ms</span>
+						</div>
+						<!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">testReport4</span> <span
+								class="method-start">69 ms</span>
+						</div>
+						<!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">verifyLogoutISDisplayed</span> <span
+								class="method-start">74 ms</span>
+						</div>
+						<!-- test-method -->
+					</div>
+					<!-- main-panel-content rounded-window-bottom -->
+				</div>
+				<!-- panel -->
+			</div>
+			<!-- main-panel-root -->
+		</div>
+		<!-- wrapper -->
+</body>
 </html>

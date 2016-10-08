@@ -16,6 +16,8 @@ import org.testng.Reporter;
 import com.companyname.projectname.testbase.TestBase;
 
 public class Listner extends TestBase implements ITestListener{
+	
+	
 
 	public void onTestStart(ITestResult result) {
 		 Reporter.log("Test started running:"  + result.getMethod().getMethodName() + " at:" + result.STARTED );
@@ -55,8 +57,8 @@ public class Listner extends TestBase implements ITestListener{
 	 }
 
 	public void onFinish(ITestContext arg0) {
-		Reporter.log("Passeds: " + arg0.getPassedTests());
-		Reporter.log("Faileds:" + arg0.getFailedTests()); 
+     
+
 	}
 
 	public void onStart(ITestContext arg0) {

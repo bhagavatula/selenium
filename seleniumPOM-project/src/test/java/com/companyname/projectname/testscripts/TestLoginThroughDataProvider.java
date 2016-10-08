@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 
 import java.io.IOException;
+import java.util.logging.Logger;
 
 import com.companyname.projectname.excelreader.Excel_Reader;
 import com.companyname.projectname.pagelibrary.SignIn;
@@ -14,6 +15,7 @@ import com.companyname.projectname.testbase.TestBase;
 
 public class TestLoginThroughDataProvider extends TestBase{
 	SignIn signIn;
+	static Logger log = Logger.getLogger(TestLoginThroughDataProvider.class.getName());
 	
 	@BeforeClass
 	public void setUP() throws IOException{
@@ -22,16 +24,10 @@ public class TestLoginThroughDataProvider extends TestBase{
 	
 	public Object[][] getData(String ExcelName, String testcase) {
 		Excel_Reader Data = new Excel_Reader(System.getProperty("user.dir") + "//src//test//resources//"+ExcelName);
-		
 		int rowNum = Data.getRowCount(testcase);
-		
 		System.out.println(rowNum);
-		
 		int colNum = Data.getColumnCount(testcase);
-
-
 		Object sampleData[][] = new Object[rowNum - 1][colNum];
-		
 		for (int i = 2; i <=rowNum; i++) {
 			for (int j = 0; j < colNum; j++) {
 				sampleData[i - 2][j] = Data.getCellData(testcase, j, i);
@@ -47,8 +43,8 @@ public class TestLoginThroughDataProvider extends TestBase{
 	}
 	
 	@Test(dataProvider = "loginData")
-	public void testlogin(String TestCaseName, String Email, String Password,String runMode) throws InterruptedException{
-
+	public void testlogin123(String TestCaseName, String Email, String Password,String runMode) throws InterruptedException{
+        log.info("I am from data provider gest");
 		if(runMode.equals("N")){
 			throw new SkipException("Skipping the test");
 		}

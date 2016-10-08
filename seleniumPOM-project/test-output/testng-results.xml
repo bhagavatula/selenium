@@ -1,103 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="8" passed="8">
-  <reporter-output>
-    <line>
+	<reporter-output>
+		<line>
       <![CDATA[Test started running:testReport1 at:16]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Test started running:testReport2 at:16]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Test started running:testReport3 at:16]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Test started running:testReport4 at:16]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Passeds: [ResultMap map={[TestResult name=testReport2 status=SUCCESS method=Test1.testReport2()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d] output=Test started running:testReport2 at:16]=Test1.testReport2()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d], [TestResult name=testReport4 status=SUCCESS method=Test1.testReport4()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d] output=Test started running:testReport4 at:16]=Test1.testReport4()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d], [TestResult name=testReport1 status=SUCCESS method=Test1.testReport1()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d] output=Test started running:testReport1 at:16]=Test1.testReport1()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d], [TestResult name=testReport3 status=SUCCESS method=Test1.testReport3()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d] output=Test started running:testReport3 at:16]=Test1.testReport3()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]}]]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Faileds:[ResultMap map={}]]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Test started running:testLoginWithInvalidData at:16]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Test started running:testLoginWithValidData at:16]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Test started running:testReport4 at:16]]>
-    </line>
-    <line>
+		</line>
+		<line>
       <![CDATA[Test started running:verifyLogoutISDisplayed at:16]]>
-    </line>
-  </reporter-output>
-  <suite name="Regression Suit" duration-ms="94" started-at="2016-09-21T17:00:27Z" finished-at="2016-09-21T17:00:27Z">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="60" started-at="2016-09-21T17:00:27Z" finished-at="2016-09-21T17:00:27Z">
-      <class name="com.companyname.projectname.testscripts.Test1">
-        <test-method status="PASS" signature="testReport1()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]" name="testReport1" duration-ms="21" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+		</line>
+	</reporter-output>
+	<suite name="Regression Suit" duration-ms="94" started-at="2016-09-21T17:00:27Z"
+		finished-at="2016-09-21T17:00:27Z">
+		<groups>
+		</groups>
+		<test name="Test" duration-ms="60" started-at="2016-09-21T17:00:27Z"
+			finished-at="2016-09-21T17:00:27Z">
+			<class name="com.companyname.projectname.testscripts.Test1">
+				<test-method status="PASS"
+					signature="testReport1()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]"
+					name="testReport1" duration-ms="21" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:testReport1 at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testReport1 -->
-        <test-method status="PASS" signature="testReport2()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]" name="testReport2" duration-ms="5" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+						</line>
+					</reporter-output>
+				</test-method> <!-- testReport1 -->
+				<test-method status="PASS"
+					signature="testReport2()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]"
+					name="testReport2" duration-ms="5" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:testReport2 at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testReport2 -->
-        <test-method status="PASS" signature="testReport3()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]" name="testReport3" duration-ms="3" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+						</line>
+					</reporter-output>
+				</test-method> <!-- testReport2 -->
+				<test-method status="PASS"
+					signature="testReport3()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]"
+					name="testReport3" duration-ms="3" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:testReport3 at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testReport3 -->
-        <test-method status="PASS" signature="testReport4()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]" name="testReport4" duration-ms="3" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+						</line>
+					</reporter-output>
+				</test-method> <!-- testReport3 -->
+				<test-method status="PASS"
+					signature="testReport4()[pri:0, instance:com.companyname.projectname.testscripts.Test1@61bedd7d]"
+					name="testReport4" duration-ms="3" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:testReport4 at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testReport4 -->
-      </class> <!-- com.companyname.projectname.testscripts.Test1 -->
-    </test> <!-- Test -->
-    <test name="Test1" duration-ms="21" started-at="2016-09-21T17:00:27Z" finished-at="2016-09-21T17:00:27Z">
-      <class name="com.companyname.projectname.testscripts.Test2">
-        <test-method status="PASS" signature="testLoginWithInvalidData()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]" name="testLoginWithInvalidData" duration-ms="2" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+						</line>
+					</reporter-output>
+				</test-method> <!-- testReport4 -->
+			</class> <!-- com.companyname.projectname.testscripts.Test1 -->
+		</test> <!-- Test -->
+		<test name="Test1" duration-ms="21" started-at="2016-09-21T17:00:27Z"
+			finished-at="2016-09-21T17:00:27Z">
+			<class name="com.companyname.projectname.testscripts.Test2">
+				<test-method status="PASS"
+					signature="testLoginWithInvalidData()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]"
+					name="testLoginWithInvalidData" duration-ms="2" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:testLoginWithInvalidData at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLoginWithInvalidData -->
-        <test-method status="PASS" signature="testLoginWithValidData()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]" name="testLoginWithValidData" duration-ms="2" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+						</line>
+					</reporter-output>
+				</test-method> <!-- testLoginWithInvalidData -->
+				<test-method status="PASS"
+					signature="testLoginWithValidData()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]"
+					name="testLoginWithValidData" duration-ms="2" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:testLoginWithValidData at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLoginWithValidData -->
-        <test-method status="PASS" signature="testReport4()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]" name="testReport4" duration-ms="2" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+						</line>
+					</reporter-output>
+				</test-method> <!-- testLoginWithValidData -->
+				<test-method status="PASS"
+					signature="testReport4()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]"
+					name="testReport4" duration-ms="2" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:testReport4 at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testReport4 -->
-        <test-method status="PASS" signature="verifyLogoutISDisplayed()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]" name="verifyLogoutISDisplayed" duration-ms="2" started-at="2016-09-21T22:30:27Z" finished-at="2016-09-21T22:30:27Z">
-          <reporter-output>
-            <line>
+						</line>
+					</reporter-output>
+				</test-method> <!-- testReport4 -->
+				<test-method status="PASS"
+					signature="verifyLogoutISDisplayed()[pri:0, instance:com.companyname.projectname.testscripts.Test2@228ef305]"
+					name="verifyLogoutISDisplayed" duration-ms="2" started-at="2016-09-21T22:30:27Z"
+					finished-at="2016-09-21T22:30:27Z">
+					<reporter-output>
+						<line>
               <![CDATA[Test started running:verifyLogoutISDisplayed at:16]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyLogoutISDisplayed -->
-      </class> <!-- com.companyname.projectname.testscripts.Test2 -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Regression Suit -->
+						</line>
+					</reporter-output>
+				</test-method> <!-- verifyLogoutISDisplayed -->
+			</class> <!-- com.companyname.projectname.testscripts.Test2 -->
+		</test> <!-- Test1 -->
+	</suite> <!-- Regression Suit -->
 </testng-results>

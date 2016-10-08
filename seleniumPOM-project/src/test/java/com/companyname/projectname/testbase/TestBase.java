@@ -45,9 +45,9 @@ public class TestBase {
 		selectBrowser(Repository.getProperty("browser"));
 		driver.get(Repository.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		startTime = TestBase.now("dd.MMMM.yyyy hh.mm.ss aaa");
-		ReportUtil.startTesting(System.getProperty("user.dir") + "//src//test//java//com//companyname//projectname//report//index.html", startTime, "Test", "1.5");
-		ReportUtil.startSuite("Suite1");
+		//startTime = TestBase.now("dd.MMMM.yyyy hh.mm.ss aaa");
+		//ReportUtil.startTesting(System.getProperty("user.dir") + "//src//test//java//com//companyname//projectname//report//index.html", startTime, "Test", "1.5");
+		//ReportUtil.startSuite("Suite1");
 	}
 
 	public void loadPropertiesFile() throws IOException {
@@ -141,6 +141,7 @@ public class TestBase {
 	}
 
 	public void closeBrowser() {
+		//driver = null;
 		driver.quit();
 	}
 
@@ -156,6 +157,12 @@ public class TestBase {
 	}
 
 	public static void updateResult(int indexSI, String testCaseName, String testCaseStatus, String scriptName) throws IOException {
+		
+		
+		
+		
+		
+		
 		
 		String startDateTime = new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime());
 
