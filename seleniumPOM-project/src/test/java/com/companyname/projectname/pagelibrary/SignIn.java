@@ -7,7 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class SignIn {
+import com.companyname.projectname.testbase.TestBase;
+import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.model.Test;
+
+public class SignIn extends TestBase{
 	
 	WebDriver driver;
 	static Logger log = Logger.getLogger(SignIn.class.getName());
@@ -30,7 +34,15 @@ public class SignIn {
 	 */
 	public void clickonSignIn(){
 		log.info("clicking on sign in link");
-		driver.findElement(signIn).click();
+		
+		try {
+			driver.findElement(signIn).click();
+			test.log(LogStatus.PASS, "Clicking on sing in Link");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			test.log(LogStatus.FAIL,"Clicking on sing in Link");
+		}
 	}
 	
 	/**
