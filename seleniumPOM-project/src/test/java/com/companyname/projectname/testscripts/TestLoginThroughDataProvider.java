@@ -1,5 +1,8 @@
 package com.companyname.projectname.testscripts;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
@@ -43,7 +46,7 @@ public class TestLoginThroughDataProvider extends TestBase{
 	}
 	
 	@Test(dataProvider = "loginData")
-	public void testlogin123(String TestCaseName, String Email, String Password,String runMode) throws InterruptedException{
+	public void TestLoginWithDataProvider(String TestCaseName, String Email, String Password,String runMode) throws InterruptedException{
         log.info("I am from data provider gest");
 		if(runMode.equals("N")){
 			throw new SkipException("Skipping the test");

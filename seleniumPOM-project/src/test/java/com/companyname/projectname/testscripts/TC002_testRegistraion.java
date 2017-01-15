@@ -3,16 +3,13 @@ package com.companyname.projectname.testscripts;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+
 import org.testng.Assert;
-import org.testng.AssertJUnit;
 import org.testng.Reporter;
 
 import java.io.IOException;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
+import com.companyname.projectname.customelistener.Listner;
 import com.companyname.projectname.pagelibrary.CreateAnAccount;
 import com.companyname.projectname.pagelibrary.SignIn;
 import com.companyname.projectname.testbase.TestBase;
@@ -20,6 +17,7 @@ import com.companyname.projectname.testbase.TestBase;
 public class TC002_testRegistraion extends TestBase{
 	SignIn signIn;
 	CreateAnAccount createAnAccount;
+
 	
 	String firstName ="FirstName";
 	String lastName = "LastName";
@@ -31,6 +29,7 @@ public class TC002_testRegistraion extends TestBase{
 	@BeforeClass
 	public void setUP() throws IOException{
 		init();
+
 		signIn = new SignIn(driver);
 		createAnAccount = new CreateAnAccount(driver);
 	}
