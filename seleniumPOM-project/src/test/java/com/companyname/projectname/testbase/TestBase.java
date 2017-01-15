@@ -28,8 +28,9 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import com.companyname.projectname.report.ReportUtil;
 import com.google.common.base.Function;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 public class TestBase {
 
@@ -39,15 +40,16 @@ public class TestBase {
 	public static WebDriver driver;
 	public String startTime;
 	public static int indexSI = 1;
+	public static ExtentReports extent;
+	public static ExtentTest test;
 
 	public void init() throws IOException {
+		extent = new ExtentReports(System.getProperty("user.dir")+"//src//test//java//com//companyname//projectname//screenshots//test.html");
+		
 		loadPropertiesFile();
 		selectBrowser(Repository.getProperty("browser"));
 		driver.get(Repository.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		//startTime = TestBase.now("dd.MMMM.yyyy hh.mm.ss aaa");
-		//ReportUtil.startTesting(System.getProperty("user.dir") + "//src//test//java//com//companyname//projectname//report//index.html", startTime, "Test", "1.5");
-		//ReportUtil.startSuite("Suite1");
 	}
 
 	public void loadPropertiesFile() throws IOException {
@@ -142,10 +144,10 @@ public class TestBase {
 
 	public void closeBrowser() {
 		//driver = null;
-		driver.quit();
+		driver.close();
 	}
 
-	public static void getScreenShot(String fileName) throws IOException {
+	public  void getScreenShot(String fileName) throws IOException {
 		File outputFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(outputFile, new File(System.getProperty("user.dir") + "//src//test//java//com//companyname//projectname//screenshots//" + fileName + ".jpg"));
 	}
@@ -184,10 +186,9 @@ public class TestBase {
 			bw.write("<u><h1 align='center'>" + "Test execution report" + "</h1></u>" + "\n");
 			bw.flush();
 			bw.close();
-		}
+		}	
 		BufferedWriter bw1 = new BufferedWriter(new FileWriter(file, true));
 		if (indexSI == 1) {
-
 			bw1.write("<table align='center' border='0' width='70%' height='10'>");
 			bw1.write("<tr><td width='70%' </td></tr>");
 			bw1.write("<table align='center' border='1' width='70%' height='47'>");
